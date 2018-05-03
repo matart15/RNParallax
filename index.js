@@ -190,10 +190,10 @@ class RNParallax extends Component {
     return (
       <Animated.View
         style={[
-          styles.bar,
+          styles.header,
           {
-            height: this.getHeaderMinHeight(),
-          },
+            height: this.getHeaderHeight(),
+          }
         ]}
       >
         {renderNavBar()}
