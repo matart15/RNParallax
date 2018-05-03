@@ -286,10 +286,11 @@ class RNParallax extends Component {
     return (
       <Animated.ScrollView
         style={styles.scrollView}
+        contentContainerStyle={{ flex: 1}}
         scrollEventThrottle={scrollEventThrottle}
         onScroll={Animated.event([{ nativeEvent: { contentOffset: { y: this.state.scrollY } } }])}
       >
-        <View style={{ marginTop: this.getHeaderMaxHeight() }}>
+        <View style={{ flex:1, marginTop: this.getHeaderMaxHeight() }}>
           {renderContent()}
         </View>
       </Animated.ScrollView>
